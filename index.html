@@ -1453,7 +1453,20 @@
         const themeToggleBtn = document.getElementById('theme-toggle');
         const darkIcon = document.getElementById('theme-toggle-dark-icon');
         const lightIcon = document.getElementById('theme-toggle-light-icon');
+        function openCvModal() {
+    const confirmDownload = confirm("Are you sure to download this CV");
 
+    if (confirmDownload) {
+        const link = document.createElement('a');
+        link.href = "assets/files/CV.pdf"; // Update path if needed
+        link.download = "CV.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+}
+
+        
         function setTheme(isDark) {
             if (isDark) {
                 document.documentElement.classList.add('dark');
