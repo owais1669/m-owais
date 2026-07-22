@@ -1546,28 +1546,28 @@
             });
         }
 
-        // Modals Logic
-        function openCvModal() {
-            const modal = document.getElementById('cv-modal');
-            modal.classList.remove('opacity-0', 'pointer-events-none');
-        }
-        function closeCvModal() {
-            const modal = document.getElementById('cv-modal');
-            modal.classList.add('opacity-0', 'pointer-events-none');
-        }
+        // // Modals Logic
+        // function openCvModal() {
+        //     const modal = document.getElementById('cv-modal');
+        //     modal.classList.remove('opacity-0', 'pointer-events-none');
+        // }
+        // function closeCvModal() {
+        //     const modal = document.getElementById('cv-modal');
+        //     modal.classList.add('opacity-0', 'pointer-events-none');
+        // }
 
-        function triggerCvDownload() {
-            const cvText = `
+        // function triggerCvDownload() {
+        //     const cvText = `
 
-            `;
-            const blob = new Blob([cvText], { type: 'text/plain' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'Muhammad_Owais_CV.txt';
-            a.click();
-            closeCvModal();
-        }
+        //     `;
+        //     const blob = new Blob([cvText], { type: 'text/plain' });
+        //     const url = URL.createObjectURL(blob);
+        //     const a = document.createElement('a');
+        //     a.href = url;
+        //     a.download = 'Muhammad_Owais_CV.txt';
+        //     a.click();
+        //     closeCvModal();
+        // }
 
         const projectDetails = {
             'breast-ultrasound': {
