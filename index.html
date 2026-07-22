@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Owais | PhD Researcher & Deep Learning Specialist</title>
+    
+    <!-- Primary SEO Meta Tags -->
+    <meta name="title" content="Muhammad Owais - PhD Researcher in Deep Learning & Vision">
+    <meta name="description" content="Portfolio of Muhammad Owais, PhD Researcher at UESTC & CS Lecturer. Specialist in Deep Learning for Speech & Vision, Transformers, ViTs, and Multimodal Representation Learning.">
+    <meta name="keywords" content="Muhammad Owais, Deep Learning, Vision Transformers, Deepfake Speech Detection, GIKI, UESTC, Machine Learning, Computer Vision, AI Researcher">
+    <meta name="author" content="Muhammad Owais">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://owais-ai.github.io/">
+    <meta property="og:title" content="Muhammad Owais | PhD Researcher & Deep Learning Specialist">
+    <meta property="og:description" content="PhD Researcher, Published Author in IEEE Access & IJST. Specialist in Deepfake Audio Detection, Vision Transformers, and Audio-Visual Deep Learning.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#2563eb',
+                            600: '#1d4ed8',
+                            700: '#1e40af',
+                            900: '#0f172a',
+                        },
+                        accent: {
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS Styles -->
+    <style>
+        /* Modern Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.6);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        /* Glassmorphism Styles */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .dark .glass-panel {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.6);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .dark .glass-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            border-color: rgba(37, 99, 235, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px -10px rgba(37, 99, 235, 0.15);
+        }
+
+        /* Ambient Glow Effect */
+        .glow-bg {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        /* Active Navigation Indicator */
+        .nav-link.active {
+            color: #2563eb;
+            font-weight: 600;
+        }
+        .dark .nav-link.active {
+            color: #60a5fa;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white transition-colors duration-300 relative min-h-screen">
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-brand-500 via-accent-500 to-indigo-500 z-50 transition-all duration-150" style="width: 0%;"></div>
+
+    <!-- Ambient Background Blobs -->
+    <div class="glow-bg w-96 h-96 bg-brand-500 top-10 left-10 dark:opacity-20"></div>
+    <div class="glow-bg w-96 h-96 bg-accent-500 top-1/3 right-10 dark:opacity-15"></div>
+    <div class="glow-bg w-96 h-96 bg-indigo-500 bottom-10 left-1/4 dark:opacity-20"></div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 w-full glass-panel border-b transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Brand Logo -->
+            <a href="#hero" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-indigo-600 flex items-center justify-center text-white font-bold font-mono text-lg shadow-md group-hover:scale-105 transition-transform duration-300">
+                    MO
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-slate-900 dark:text-white group-hover:text-brand-500 transition-colors">
+                        Muhammad Owais
+                    </span>
+                    <span class="block text-xs font-mono text-slate-500 dark:text-slate-400">
+                        PhD Researcher • Deep Learning
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="nav-link text-slate-600 hover:text-brand-500 dark:text-slate-300 dark:hover:text-white transition-colors">About</a>
+                <a href="#skills" class="nav-link text-slate-600 hover:text-brand-500 dark:text-slate-300 dark:hover:text-white transition-colors">Skills</a>
+                <a href="#publications" class="nav-link text-slate-600 hover:text-brand-500 dark:text-slate-300 dark:hover:text-white transition-colors">Publications</a>
+                <a href="#experience" class="nav-link text-slate-600 hover:text-brand-500 dark:text-slate-300 dark:hover:text-white transition-colors">Experience</a>
+                <a href="#projects" class="nav-link text-slate-600 hover:text-brand-500 dark:text-slate-300 dark:hover:text-white transition-colors">Projects</a>
+                <a href="#contact" class="nav-link text-slate-600 hover:text-brand-500 dark:text-slate-300 dark:hover:text-white transition-colors">Contact</a>
+            </nav>
+
+            <!-- Action Controls & Dark Mode Toggle -->
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode" class="p-2.5 rounded-xl bg-slate-200/60 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 hover:text-brand-500 dark:hover:text-brand-400 focus:outline-none transition-colors border border-slate-300/40 dark:border-slate-700/50">
+                    <i id="theme-toggle-dark-icon" class="fa-solid fa-moon text-lg hidden"></i>
+                    <i id="theme-toggle-light-icon" class="fa-solid fa-sun text-lg hidden"></i>
+                </button>
+
+                <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-xl text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 transition-all shadow-sm hover:shadow-md hover:shadow-brand-500/20">
+                    <i class="fa-solid fa-paper-plane mr-2 text-xs"></i> Contact
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" aria-label="Toggle Mobile Navigation" class="md:hidden p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:text-brand-500 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200/50 dark:border-slate-800 px-6 py-6 space-y-4 bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-xl">
+            <a href="#about" class="mobile-nav-item block text-base font-medium text-slate-700 dark:text-slate-200 hover:text-brand-500">About Me</a>
+            <a href="#skills" class="mobile-nav-item block text-base font-medium text-slate-700 dark:text-slate-200 hover:text-brand-500">Skills</a>
+            <a href="#publications" class="mobile-nav-item block text-base font-medium text-slate-700 dark:text-slate-200 hover:text-brand-500">Publications</a>
+            <a href="#experience" class="mobile-nav-item block text-base font-medium text-slate-700 dark:text-slate-200 hover:text-brand-500">Experience</a>
+            <a href="#projects" class="mobile-nav-item block text-base font-medium text-slate-700 dark:text-slate-200 hover:text-brand-500">Projects</a>
+            <a href="#contact" class="mobile-nav-item block text-base font-medium text-slate-700 dark:text-slate-200 hover:text-brand-500">Contact</a>
+            <div class="pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
+                <button onclick="openCvModal()" class="w-full text-center px-4 py-2.5 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-white font-medium text-sm">
+                    <i class="fa-solid fa-file-pdf mr-2"></i> View Resume
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                    
+                    <!-- Bio & CTAs -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        
+                        <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-600 dark:text-brand-400 text-xs font-semibold tracking-wide uppercase">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                            <span>PhD Researcher @ UESTC & CS Lecturer</span>
+                        </div>
+                         <!-- <h3 class="text-2xl sm:text-5xl lg:text-6xl font-extrabold text-slate-700 dark:text-white tracking-tight leading-tight">
+                            <span class="">Muhammad Owais</span>
+                        </h3>
+
+                        <h3 class="text-1xl sm:text-5xl lg:text-4xl font-extrabold text-slate-700 dark:text-white tracking-tight leading-tight">
+                            <span class="bg-gradient-to-r from-brand-500 via-indigo-500 to-accent-500 bg-clip-text text-transparent">Multimodal AI, LLMs & NLP Researcher</span>
+                        </h3> -->
+<!-- Name -->
+<h3 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-700 dark:text-white tracking-tight leading-tight">
+    <span>Muhammad Owais</span>
+</h3>
+
+<!-- Description -->
+<h3 class="text-1xl sm:text-5xl lg:text-4xl font-extrabold text-slate-700 dark:text-white tracking-tight leading-tight">
+                            <span class="bg-gradient-to-r from-brand-500 via-indigo-500 to-accent-500 bg-clip-text text-transparent">NLP, Multimodal AI & LLMs Researcher</span>
+                        </h3>
+                        <p class="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            I am <strong class="text-slate-900 dark:text-white">Muhammad Owais</strong>, a PhD Researcher specializing in Deep Learning, Vision Transformers, Deepfake Speech Detection, and Multimodal Representation Learning. Published author in <span class="font-semibold text-brand-600 dark:text-brand-400">IEEE Access</span> and <span class="font-semibold text-brand-600 dark:text-brand-400">IJST (Q1)</span>.
+                        </p>
+
+                        <!-- Research Pillars -->
+                        <div class="flex flex-wrap gap-2 justify-center lg:justify-start pt-2">
+                            <span class="px-3 py-1 rounded-lg bg-slate-200/70 dark:bg-slate-800/80 text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-300/40 dark:border-slate-700/50">
+                                <i class="fa-solid fa-microphone-lines text-brand-500 mr-1.5"></i> Deepfake Speech Detection
+                            </span>
+                            <span class="px-3 py-1 rounded-lg bg-slate-200/70 dark:bg-slate-800/80 text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-300/40 dark:border-slate-700/50">
+                                <i class="fa-solid fa-eye text-accent-500 mr-1.5"></i> Vision Transformers (ViTs)
+                            </span>
+                            <span class="px-3 py-1 rounded-lg bg-slate-200/70 dark:bg-slate-800/80 text-xs font-mono text-slate-700 dark:text-slate-300 border border-slate-300/40 dark:border-slate-700/50">
+                                <i class="fa-solid fa-cubes text-indigo-500 mr-1.5"></i> Multimodal Fusion
+                            </span>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                            <a href="#projects" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl text-base font-medium text-white bg-brand-600 hover:bg-brand-700 transition-all shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:-translate-y-0.5">
+                                <i class="fa-solid fa-diagram-project mr-2.5"></i> View Projects
+                            </a>
+                            
+                            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl text-base font-medium text-slate-800 dark:text-slate-200 bg-slate-200/80 dark:bg-slate-800/80 hover:bg-slate-300 dark:hover:bg-slate-700 transition-all border border-slate-300/50 dark:border-slate-700/50">
+                                <i class="fa-solid fa-envelope mr-2.5"></i> Contact Me
+                            </a>
+
+                            <button onclick="openCvModal()" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl text-base font-medium text-slate-700 dark:text-slate-300 hover:text-brand-500 transition-colors">
+                                <i class="fa-solid fa-download mr-2"></i> Download CV
+                            </button>
+                        </div>
+
+                        <!-- Social Quick Links -->
+                        <div class="pt-6 flex items-center justify-center lg:justify-start space-x-5 text-slate-500 dark:text-slate-400">
+                            <a href="mailto:owai1669@gmail.com" class="hover:text-brand-500 transition-colors" title="Email Owais">
+                                <i class="fa-solid fa-envelope text-xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/muhammad-owais-9905b7216/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-500 transition-colors" title="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=BUdzGk4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="hover:text-brand-500 transition-colors" title="Google Scholar">
+                                <i class="fa-solid fa-graduation-cap text-xl"></i>
+                            </a>
+                            <a href="https://orcid.org/0009-0001-0246-2984" target="_blank" rel="noopener noreferrer" class="hover:text-brand-500 transition-colors" title="ORCID Profile">
+                                <i class="fa-brands fa-orcid text-xl"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:text-brand-500 transition-colors" title="GitHub Repository">
+                                <i class="fa-brands fa-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Hero Visual / Profile Card -->
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="relative w-full max-w-md">
+                            <!-- Background Frame Accent -->
+                            <div class="absolute -inset-1 bg-gradient-to-r from-brand-500 via-accent-500 to-indigo-500 rounded-3xl blur-lg opacity-40 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                            
+                            <!-- Profile Card -->
+                            <div class="relative glass-panel rounded-3xl p-6 sm:p-8 space-y-6 text-center">
+                                <div class="relative w-40 h-40 mx-auto rounded-2xl overflow-hidden border-2 border-brand-500/30 p-1 bg-slate-100 dark:bg-slate-900 shadow-inner">
+                                    <img src="Muhammad_Owais_profile__.jpg" 
+                                         alt="Muhammad Owais" 
+                                         class="w-full h-full object-cover rounded-xl"
+                                         onerror="this.src='https://placehold.co/400x400/1e293b/ffffff?text=Muhammad+Owais'">
+                                    <div class="absolute bottom-2 right-2 bg-emerald-500 w-4 h-4 rounded-full border-2 border-slate-900" title="Active in Research"></div>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-xl font-bold text-slate-900 dark:text-white">Muhammad Owais</h3>
+                                    <p class="text-xs font-mono text-brand-600 dark:text-brand-400 mt-1">PhD Candidate (UESTC) • MS CS (GIKI)</p>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1"><i class="fa-solid fa-location-dot mr-1"></i> Chengdu, China / Swabi, Pakistan</p>
+                                </div>
+
+                                <!-- Dynamic Research Badges -->
+                                <!-- <div class="grid grid-cols-2 gap-3 pt-2 text-left">
+                                    <div class="p-3 rounded-xl bg-slate-100/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800">
+                                        <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">IEEE Access '26</div>
+                                        <div class="text-sm font-semibold text-slate-900 dark:text-slate-100">Audio Deepfake</div>
+                                    </div>
+                                    <div class="p-3 rounded-xl bg-slate-100/80 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800">
+                                        <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">IJST (Q1 Journal)</div>
+                                        <div class="text-sm font-semibold text-slate-900 dark:text-slate-100">Urdu Emotion AI</div>
+                                    </div>
+                                </div> -->
+
+                                <div class="pt-2 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
+                                    <span><i class="fa-solid fa-check-circle text-emerald-500 mr-1"></i> Open to Research Grants, Collaborations & AI Projects</span>
+                                    <!-- <span><i class="fa-solid fa-flask text-brand-500 mr-1"></i> Open to Research Collaborations</span> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+<section id="about" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Heading -->
+        <div class=" mb-16 space-y-3">
+            <h2 class="text-xs font-mono font-semibold tracking-wider text-brand-600 dark:text-brand-400 uppercase">
+                01 - BIOGRAPHY and FOCUS
+            </h2>
+
+            <h3 class="text-3xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+                About Me
+            </h3>
+
+            <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base">
+                Dedicated researcher with a history of solving complex computer vision, speech processing, and trustworthy AI challenges.
+            </p>
+        </div>
+
+        <!-- Main Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+            <!-- ===================================================== -->
+            <!-- LEFT : Academic Overview (60%) -->
+            <!-- ===================================================== -->
+            <div class="lg:col-span-7">
+
+                <div class="glass-card p-8 rounded-3xl h-full">
+
+                    <h4 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center mb-6">
+                        <i class="fa-solid fa-user-graduate text-brand-500 mr-3"></i>
+                        Academic Overview
+                    </h4>
+
+                    <div class="space-y-6">
+
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
+                            I am currently pursuing a
+                            <strong>PhD in Computer Science</strong>
+                            at the
+                            <em>University of Electronic Science and Technology of China (UESTC)</em>,
+                            Chengdu. Prior to this, I completed my
+                            <strong>MS/MPhil in Computer Science</strong>
+                            from the prestigious
+                            <em>Ghulam Ishaq Khan Institute of Engineering Sciences and Technology (GIKI)</em>,
+                            where I developed a strong background in artificial intelligence,
+                            machine learning, and intelligent computing.
+                        </p>
+
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
+                            My current research focuses on
+                            <strong>Deepfake Audio Detection</strong>,
+                            <strong>Deep Learning</strong>,
+                            <strong>Vision Transformers (ViTs)</strong>,
+                            and AI for
+                            <strong>Low-Resource Languages</strong>,
+                            spanning speech processing, computer vision,
+                            and multimodal representation learning.
+                            My long-term research vision is to advance
+                            <strong>Large Language Models (LLMs)</strong>,
+                            <strong>Vision-Language Models (VLMs)</strong>,
+                            <strong>Natural Language Processing (NLP)</strong>,
+                            and trustworthy foundation models that bridge
+                            cutting-edge research with real-world applications.
+                        </p>
+
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
+                            Alongside my research, I serve as a
+                            <strong>Lecturer in Computer Science</strong>
+                            at City University (CUSIT), where I teach
+                            programming, artificial intelligence, and
+                            machine learning while supervising undergraduate
+                            research and final-year projects. My broader goal
+                            is to translate academic research into practical,
+                            impactful AI solutions for society.
+                        </p>
+
+                    </div>
+                                       <!-- Key Strengths Grid -->
+                        <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="flex items-start space-x-3 p-3 rounded-xl bg-slate-100/60 dark:bg-slate-900/40">
+                                <i class="fa-solid fa-brain text-brand-500 text-lg mt-1"></i>
+                                <div>
+                                    <h5 class="text-sm font-semibold text-slate-900 dark:text-white">Robust Architecture Design</h5>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400">Designing hybrid CNN-Transformer models for low-resource tasks.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3 p-3 rounded-xl bg-slate-100/60 dark:bg-slate-900/40">
+                                <i class="fa-solid fa-square-poll-vertical text-accent-500 text-lg mt-1"></i>
+                                <div>
+                                    <h5 class="text-sm font-semibold text-slate-900 dark:text-white">Rigorous Experimental Design</h5>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400">Ablation studies, error analysis, and reproducible pipelines.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+
+            </div>
+
+            <!-- ===================================================== -->
+            <!-- RIGHT : Profile Cards (40%) -->
+            <!-- ===================================================== -->
+            <div class="lg:col-span-5">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+                    <!-- Degree -->
+                    <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-5 border border-slate-200 dark:border-slate-700">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+                                <i class="fa-solid fa-graduation-cap text-blue-600 text-xl"></i>
+                            </div>
+
+                            <div>
+                                <h5 class="text-sm text-slate-500 dark:text-slate-400 font-semibold">
+                                    Degree
+                                </h5>
+
+                                <p class="font-bold text-lg text-slate-900 dark:text-white">
+                                    PhD Candidate
+                                </p>
+
+                                <span class="text-sm text-slate-500 dark:text-slate-400">
+                                    UESTC, China
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Current Role -->
+                    <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-5 border border-slate-200 dark:border-slate-700">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
+                                <i class="fa-solid fa-user-tie text-green-600 text-xl"></i>
+                            </div>
+
+                            <div>
+                                <h5 class="text-sm text-slate-500 dark:text-slate-400 font-semibold">
+                                    Current Role
+                                </h5>
+
+                                <p class="font-bold text-lg text-slate-900 dark:text-white">
+                                    Lecturer
+                                </p>
+
+                                <span class="text-sm text-slate-500 dark:text-slate-400">
+                                    CUSIT
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-5 border border-slate-200 dark:border-slate-700">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center">
+                                <i class="fa-solid fa-chalkboard-user text-purple-600 text-xl"></i>
+                            </div>
+
+                            <div>
+                                <h5 class="text-sm text-slate-500 dark:text-slate-400 font-semibold">
+                                    Experience
+                                </h5>
+
+                                <p class="font-bold text-lg text-slate-900 dark:text-white">
+                                    3+ Years
+                                </p>
+
+                                <span class="text-sm text-slate-500 dark:text-slate-400">
+                                    Teaching & Research
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Research -->
+                    <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-5 border border-slate-200 dark:border-slate-700">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center">
+                                <i class="fa-solid fa-microchip text-orange-600 text-xl"></i>
+                            </div>
+
+                            <div>
+                                <h5 class="text-sm text-slate-500 dark:text-slate-400 font-semibold">
+                                    Research
+                                </h5>
+
+                                <p class="font-bold text-lg text-slate-900 dark:text-white">
+                                    LLMs · NLP
+                                </p>
+
+                                <span class="text-sm text-slate-500 dark:text-slate-400">
+                                    VLMs · Vision
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Publications -->
+                    <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-5 border border-slate-200 dark:border-slate-700">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
+                                <i class="fa-solid fa-file-lines text-red-600 text-xl"></i>
+                            </div>
+
+                            <div>
+                                <h5 class="text-sm text-slate-500 dark:text-slate-400 font-semibold">
+                                    Publications
+                                </h5>
+
+                                <p class="font-bold text-lg text-slate-900 dark:text-white">
+                                    3+
+                                </p>
+
+                                <span class="text-sm text-slate-500 dark:text-slate-400">
+                                    Peer-Reviewed
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Research Interests -->
+                    <div class="bg-gradient-to-br from-brand-500 to-indigo-600 text-white rounded-2xl shadow-xl p-5">
+
+                        <h5 class="font-bold mb-4 flex items-center">
+                            <i class="fa-solid fa-compass mr-2"></i>
+                            Research Interests
+                        </h5>
+
+                        <div class="flex flex-wrap gap-2 text-xs">
+
+                            <span class="bg-white/15 px-3 py-1 rounded-full">
+                                Deep Learning
+                            </span>
+
+                            <span class="bg-white/15 px-3 py-1 rounded-full">
+                                LLMs
+                            </span>
+
+                            <span class="bg-white/15 px-3 py-1 rounded-full">
+                                NLP
+                            </span>
+
+                            <span class="bg-white/15 px-3 py-1 rounded-full">
+                                Vision Transformers
+                            </span>
+
+                            <span class="bg-white/15 px-3 py-1 rounded-full">
+                                Multimodal AI
+                            </span>
+
+                            <span class="bg-white/15 px-3 py-1 rounded-full">
+                                Speech Processing
+                            </span>
+
+                            <span class="bg-white/15 px-3 py-1 rounded-full">
+                                Deepfake Detection
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+        <!-- Technical Skills Matrix -->
+        <section id="skills" class="py-20 bg-slate-100/70 dark:bg-slate-900/40 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="mb-16 space-y-3">
+                    <h2 class="text-xs font-mono font-semibold tracking-wider text-brand-600 dark:text-brand-400 uppercase">
+                       02 - Technical Capability
+                    </h2>
+                    <h3 class="text-3xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+                        Skills & Scientific Stack
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">
+                        Grouped competencies in deep learning framework engineering, speech features, and research workflows.
+                    </p>
+                </div>
+
+                <!-- Categorized Skill Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Deep Learning & Modeling -->
+                    <div class="glass-card p-6 rounded-2xl space-y-4">
+                        <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+                            <h4 class="font-bold text-slate-900 dark:text-white flex items-center">
+                                <i class="fa-solid fa-network-wired text-brand-500 mr-2.5"></i> Deep Learning & Vision
+                            </h4>
+                            <span class="text-xs font-mono text-brand-500 bg-brand-500/10 px-2 py-0.5 rounded">Core</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">PyTorch</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">TensorFlow</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Vision Transformers (ViTs)</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">CNN Architectures</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">LSTMs / Recurrent Nets</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Transfer Learning</span>
+                        </div>
+                    </div>
+
+                    <!-- Speech & Audio Forensics -->
+                    <div class="glass-card p-6 rounded-2xl space-y-4">
+                        <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+                            <h4 class="font-bold text-slate-900 dark:text-white flex items-center">
+                                <i class="fa-solid fa-waveform-lines text-accent-500 mr-2.5"></i> Speech & Audio Processing
+                            </h4>
+                            <span class="text-xs font-mono text-accent-500 bg-accent-500/10 px-2 py-0.5 rounded">Specialty</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Mel-Spectrograms</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">MFCC Feature Extraction</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">LFCC Signal Analysis</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">ASR Models</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Deepfake Detection</span>
+                        </div>
+                    </div>
+
+                    <!-- Programming & Scientific Computing -->
+                    <div class="glass-card p-6 rounded-2xl space-y-4">
+                        <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+                            <h4 class="font-bold text-slate-900 dark:text-white flex items-center">
+                                <i class="fa-solid fa-code text-indigo-500 mr-2.5"></i> Languages & Computing
+                            </h4>
+                            <span class="text-xs font-mono text-indigo-500 bg-indigo-500/10 px-2 py-0.5 rounded">Primary</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Python (Expert)</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">C++</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">SQL</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">scikit-learn</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Pandas / NumPy</span>
+                        </div>
+                    </div>
+
+                    <!-- Computer Vision & Feature Extraction -->
+                    <div class="glass-card p-6 rounded-2xl space-y-4">
+                        <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+                            <h4 class="font-bold text-slate-900 dark:text-white flex items-center">
+                                <i class="fa-solid fa-camera text-emerald-500 mr-2.5"></i> Computer Vision
+                            </h4>
+                            <span class="text-xs font-mono text-emerald-500 bg-emerald-500/10 px-2 py-0.5 rounded">Applied</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Image Classification</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Feature Extraction</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Data Augmentation</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Medical Imaging (Ultrasound)</span>
+                        </div>
+                    </div>
+
+                    <!-- Scientific & Experimental Methodology -->
+                    <div class="glass-card p-6 rounded-2xl space-y-4">
+                        <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+                            <h4 class="font-bold text-slate-900 dark:text-white flex items-center">
+                                <i class="fa-solid fa-flask-vial text-rose-500 mr-2.5"></i> Research Methodology
+                            </h4>
+                            <span class="text-xs font-mono text-rose-500 bg-rose-500/10 px-2 py-0.5 rounded">Academic</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Ablation Studies</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Experimental Design</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Academic Writing</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Model Reproducibility</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Workflow -->
+                    <div class="glass-card p-6 rounded-2xl space-y-4">
+                        <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+                            <h4 class="font-bold text-slate-900 dark:text-white flex items-center">
+                                <i class="fa-solid fa-screwdriver-wrench text-amber-500 mr-2.5"></i> Tools & Ecosystem
+                            </h4>
+                            <span class="text-xs font-mono text-amber-500 bg-amber-500/10 px-2 py-0.5 rounded">DevOps</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Linux / GPU Compute</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Git / Version Control</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">LaTeX & Overleaf</span>
+                            <span class="px-3 py-1.5 rounded-xl bg-slate-200/80 dark:bg-slate-800/80 text-xs font-medium text-slate-800 dark:text-slate-200">Google Colab / Kaggle</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Peer-Reviewed Publications Section -->
+        <section id="publications" class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="mb-16 space-y-3">
+                    <h2 class="text-xs font-mono font-semibold tracking-wider text-brand-600 dark:text-brand-400 uppercase">
+                       03 - Academic Output
+                    </h2>
+                    <h3 class="text-3xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+                        Peer-Reviewed Journal Papers
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">
+                        Research contributions published in indexed journals including IEEE Access and Springer IJST.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    
+                    <!-- Paper 1 (IEEE Access) -->
+                    <div class="glass-card p-6 sm:p-8 rounded-3xl relative group border-l-4 border-l-brand-500">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                            <div class="space-y-2">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="px-2.5 py-1 rounded-md bg-brand-500/10 text-brand-600 dark:text-brand-400 text-xs font-mono font-semibold">IEEE Access (2026)</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-mono font-semibold">Journal [J1]</span>
+                                </div>
+                                <h4 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-brand-500 transition-colors">
+                                    Deepfake Audio Detection in Low-Resource Languages: A Case Study of Urdu
+                                </h4>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 font-mono">
+                                    <strong class="text-rose-500">Owais, M.</strong>, Jadoon, K. K., Sandhu, A. I., Ali, Z., Mahmood, Z., Yahya, M., & Wahid, A.
+                                </p>
+                            </div>
+                            <div class="shrink-0 flex items-center space-x-3">
+                                <a href="https://doi.org/10.1109/ACCESS.2026.3654621" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 rounded-xl text-xs font-semibold bg-brand-600 hover:bg-brand-700 text-white transition-all shadow-sm">
+                                    <i class="fa-solid fa-arrow-up-right-from-square mr-1.5"></i> DOI Link
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paper 2 (IJST Q1) -->
+                    <div class="glass-card p-6 sm:p-8 rounded-3xl relative group border-l-4 border-l-accent-500">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                            <div class="space-y-2">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="px-2.5 py-1 rounded-md bg-accent-500/10 text-accent-600 dark:text-accent-400 text-xs font-mono font-semibold">Springer IJST (Q1 Journal)</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-mono font-semibold">Journal [J2]</span>
+                                </div>
+                                <h4 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-accent-500 transition-colors">
+                                    Emotion Detection in Urdu Speech: A Deep Hybrid Learning Approach
+                                </h4>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 font-mono">
+                                    <strong class="text-rose-500">Owais, M.</strong>, Sarwar, K., Jadoon, K. K., & Yousaf, J. — <em>International Journal of Speech Technology, 28(3), 761-772, 2025.</em>
+                                </p>
+                            </div>
+                            <div class="shrink-0 flex items-center space-x-3">
+                                <a href="https://doi.org/10.1007/s10772-025-10212-1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 rounded-xl text-xs font-semibold bg-accent-600 hover:bg-accent-700 text-white transition-all shadow-sm">
+                                    <i class="fa-solid fa-arrow-up-right-from-square mr-1.5"></i> DOI Link
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <!-- Paper 3 (Submitted) -->
+                    <div class="glass-card p-6 sm:p-8 rounded-3xl relative group border-l-4 border-l-indigo-500">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                            <div class="space-y-2">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="px-2.5 py-1 rounded-md bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 text-xs font-mono font-semibold">Journal of Medical Systems</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400 text-xs font-mono font-semibold">Submitted [J3]</span>
+                                </div>
+                                <h4 class="text-xl font-bold text-slate-900 dark:text-white">
+                                    Multimodal Fusion of Vision Transformers and Clinical Language Models for Medical Visual Question Answering
+                                </h4>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 font-mono">
+                                    Co-Authored by <strong>Muhammad Owais</strong>
+                                </p>
+                            </div>
+                            <div class="shrink-0">
+                                <span class="inline-flex items-center px-3 py-1.5 rounded-xl text-xs font-mono bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                                    <i class="fa-solid fa-hourglass-half mr-1.5 text-amber-500"></i> Under Peer Review
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic & Teaching Experience Timeline -->
+        <section id="experience" class="py-20 bg-slate-100/70 dark:bg-slate-900/40 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="mb-16 space-y-3">
+                    <h2 class="text-xs font-mono font-semibold tracking-wider text-brand-600 dark:text-brand-400 uppercase">
+                       04 - Career Path
+                    </h2>
+                    <h3 class="text-3xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+                        Academic & Research Experience
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">
+                        Teaching higher-level Computer Science courses and assisting university research labs.
+                    </p>
+                </div>
+
+                <div class="relative max-w-4xl mx-auto">
+                    <!-- Vertical Line -->
+                    <div class="absolute left-4 sm:left-1/2 top-0 bottom-0 w-0.5 bg-slate-300 dark:bg-slate-800 -translate-x-1/2 hidden sm:block"></div>
+
+                    <div class="space-y-12">
+                        
+                        <!-- Role 1: CUSIT Lecturer -->
+                        <div class="relative flex flex-col sm:flex-row items-center">
+                            <div class="flex items-center justify-start sm:justify-end w-full sm:w-1/2 sm:pr-8">
+                                <div class="glass-card p-6 sm:p-8 rounded-3xl w-full">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="text-xs font-mono font-semibold text-brand-600 dark:text-brand-400 bg-brand-500/10 px-2.5 py-1 rounded-md">
+                                            Sep 2025 – June 2026
+                                        </span>
+                                        <span class="text-xs text-slate-500 dark:text-slate-400"><i class="fa-solid fa-location-dot mr-1"></i> Peshawar, PK</span>
+                                    </div>
+                                    <h4 class="text-lg font-bold text-slate-900 dark:text-white">Lecturer, Computer Science</h4>
+                                    <h5 class="text-xs font-semibold text-slate-600 dark:text-slate-300 mb-4">City University of Science & IT (CUSIT)</h5>
+                                    <ul class="space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 list-disc list-inside">
+                                        <li>Taught undergraduate courses in Programming, Artificial Intelligence, and Machine Learning.</li>
+                                        <li>Supervised final-year undergraduate research thesis projects in applied deep learning and computer vision.</li>
+                                        <li>Designed course syllabus and practical programming lab evaluations.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Circle Marker -->
+                            <div class="absolute left-4 sm:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center border-4 border-slate-50 dark:border-slate-950 z-10 shadow-md hidden sm:flex">
+                                <i class="fa-solid fa-chalkboard-user text-xs"></i>
+                            </div>
+                            <div class="w-full sm:w-1/2 sm:pl-8"></div>
+                        </div>
+
+                        <!-- Role 2: GIKI GA/RA -->
+                        <div class="relative flex flex-col sm:flex-row items-center">
+                            <div class="w-full sm:w-1/2 sm:pr-8"></div>
+                            <!-- Circle Marker -->
+                            <div class="absolute left-4 sm:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-accent-500 text-white flex items-center justify-center border-4 border-slate-50 dark:border-slate-950 z-10 shadow-md hidden sm:flex">
+                                <i class="fa-solid fa-flask text-xs"></i>
+                            </div>
+                            <div class="flex items-center justify-start w-full sm:w-1/2 sm:pl-8">
+                                <div class="glass-card p-6 sm:p-8 rounded-3xl w-full">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="text-xs font-mono font-semibold text-accent-600 dark:text-accent-400 bg-accent-500/10 px-2.5 py-1 rounded-md">
+                                            Jan 2023 – Jan 2025
+                                        </span>
+                                        <span class="text-xs text-slate-500 dark:text-slate-400"><i class="fa-solid fa-location-dot mr-1"></i> Swabi, PK</span>
+                                    </div>
+                                    <h4 class="text-lg font-bold text-slate-900 dark:text-white">Graduate Teaching & Research Assistant</h4>
+                                    <h5 class="text-xs font-semibold text-slate-600 dark:text-slate-300 mb-4">Ghulam Ishaq Khan Institute (GIKI)</h5>
+                                    <ul class="space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 list-disc list-inside">
+                                        <li>Assisted theory & lab sessions for AI, Machine Learning, Python, NLP, OOP, and Databases.</li>
+                                        <li>Conducted advanced research in Deep Learning, Speech Signal Processing, and NLP.</li>
+                                        <li>Executed experimental design, ablation studies, and manuscript preparation for tier-1 journals.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Key Research & Engineering Projects Section -->
+        <section id="projects" class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="mb-12 space-y-3">
+                    <h2 class="text-xs font-mono font-semibold tracking-wider text-brand-600 dark:text-brand-400 uppercase">
+                        05 - Portfolio
+                    </h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+                        Featured Research Projects
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">
+                        Deep learning applications built across vision classification, hybrid ViTs, audio processing, and data engineering.
+                    </p>
+                </div>
+
+                <!-- Projects Filter Bar -->
+                <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
+                    <button onclick="filterProjects('all')" class="project-filter-btn active px-4 py-2 rounded-xl text-xs font-semibold bg-brand-600 text-white transition-all">All Projects</button>
+                    <button onclick="filterProjects('vision')" class="project-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-200/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-brand-500 transition-all">Vision & ViTs</button>
+                    <button onclick="filterProjects('nlp')" class="project-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-200/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-brand-500 transition-all">NLP & Speech</button>
+                    <button onclick="filterProjects('gan')" class="project-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-200/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:text-brand-500 transition-all">Generative Models</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="vision">
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-mono text-emerald-500 bg-emerald-500/10 px-2.5 py-1 rounded-md">Medical AI • 2025</span>
+                                <i class="fa-solid fa-microscope text-slate-400"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 dark:text-white">Breast Ultrasound Tumor Classification</h4>
+                            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Developed a CNN-based deep learning classifier to categorize benign vs. malignant tumors in breast ultrasound imagery.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">CNN</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">Transfer Learning</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">Ultrasound Dataset</span>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <button onclick="openProjectModal('breast-ultrasound')" class="w-full py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 text-xs font-medium text-slate-700 dark:text-slate-200 hover:bg-brand-600 hover:text-white hover:border-brand-600 transition-all">
+                                Project Breakdown <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="vision">
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-mono text-brand-500 bg-brand-500/10 px-2.5 py-1 rounded-md">ViT Hybrid • 2025</span>
+                                <i class="fa-solid fa-i-cursor text-slate-400"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 dark:text-white">Handwritten Character Recognition</h4>
+                            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Designed a hybrid CNN-Vision Transformer model utilizing spatial features and multi-head self-attention on EMNIST dataset.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">Vision Transformer</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">CNN</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">EMNIST</span>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <button onclick="openProjectModal('handwritten-vit')" class="w-full py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 text-xs font-medium text-slate-700 dark:text-slate-200 hover:bg-brand-600 hover:text-white hover:border-brand-600 transition-all">
+                                Project Breakdown <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="vision">
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-mono text-emerald-500 bg-emerald-500/10 px-2.5 py-1 rounded-md">Agri-Vision • 2025</span>
+                                <i class="fa-solid fa-leaf text-slate-400"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 dark:text-white">Grape Leaf Disease Detection</h4>
+                            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Built an automated high-accuracy diagnostic pipeline for grape leaf pathogens using data augmentation & fine-tuning.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">PyTorch</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">ResNet</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">Augmentation</span>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <button onclick="openProjectModal('grape-leaf')" class="w-full py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 text-xs font-medium text-slate-700 dark:text-slate-200 hover:bg-brand-600 hover:text-white hover:border-brand-600 transition-all">
+                                Project Breakdown <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="nlp">
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-mono text-indigo-500 bg-indigo-500/10 px-2.5 py-1 rounded-md">NLP & Security • 2023</span>
+                                <i class="fa-solid fa-newspaper text-slate-400"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 dark:text-white">Fake News Detection Benchmarks</h4>
+                            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Executed comparative evaluation of CNN, RNN, LSTM, and Attention mechanisms for linguistic misinformation scoring.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">LSTM</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">Attention</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">NLP</span>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <button onclick="openProjectModal('fake-news')" class="w-full py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 text-xs font-medium text-slate-700 dark:text-slate-200 hover:bg-brand-600 hover:text-white hover:border-brand-600 transition-all">
+                                Project Breakdown <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="gan">
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-mono text-accent-500 bg-accent-500/10 px-2.5 py-1 rounded-md">Generative AI • 2023</span>
+                                <i class="fa-solid fa-wand-magic-sparkles text-slate-400"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 dark:text-white">GAN vs DCGAN Multilingual Generation</h4>
+                            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Comparative study evaluating GAN vs Deep Convolutional GAN architectures for generating multilingual alphabets and digits.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">GAN</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">DCGAN</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">Image Synthesis</span>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <button onclick="openProjectModal('dcgan-study')" class="w-full py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 text-xs font-medium text-slate-700 dark:text-slate-200 hover:bg-brand-600 hover:text-white hover:border-brand-600 transition-all">
+                                Project Breakdown <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card glass-card rounded-3xl overflow-hidden flex flex-col justify-between" data-category="nlp">
+                        <div class="p-6 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-mono text-amber-500 bg-amber-500/10 px-2.5 py-1 rounded-md">Data Pipeline • 2024</span>
+                                <i class="fa-solid fa-database text-slate-400"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-slate-900 dark:text-white">Student Campus Record Profiling</h4>
+                            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Large-scale data cleaning, anomaly resolution, and analytics pipeline built for university campus record management.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">Python</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">Pandas</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-200/60 dark:bg-slate-800 text-3xs font-mono">Data Cleaning</span>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <button onclick="openProjectModal('campus-data')" class="w-full py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 text-xs font-medium text-slate-700 dark:text-slate-200 hover:bg-brand-600 hover:text-white hover:border-brand-600 transition-all">
+                                Project Breakdown <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Honors Section -->
+        <section class="py-20 bg-slate-100/70 dark:bg-slate-900/40 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Education Column -->
+                    <div class="lg:col-span-7 space-y-8">
+                        <div>
+                            <h2 class="text-xs font-mono font-semibold tracking-wider text-brand-600 dark:text-brand-400 uppercase">Academic Background</h2>
+                            <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mt-1">Education</h3>
+                        </div>
+
+                        <div class="space-y-6">
+                            
+                            <!-- PhD Degree -->
+                            <div class="glass-card p-6 rounded-3xl space-y-2 border-l-4 border-l-brand-500">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-mono text-brand-600 dark:text-brand-400 font-semibold bg-brand-500/10 px-2.5 py-0.5 rounded">In Progress</span>
+                                    <span class="text-xs text-slate-500 dark:text-slate-400">Chengdu, China</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-slate-900 dark:text-white">PhD in Computer Science</h4>
+                                <h5 class="text-xs font-semibold text-slate-600 dark:text-slate-300">University of Electronic Science and Technology of China (UESTC)</h5>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 pt-1">Focus on Vision Transformers, Deepfake Audio Detection, and Multimodal Learning.</p>
+                            </div>
+
+                            <!-- MS Degree -->
+                            <div class="glass-card p-6 rounded-3xl space-y-2 border-l-4 border-l-accent-500">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-mono text-slate-600 dark:text-slate-300 font-semibold">Jan 2023 – June 2025</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-slate-900 dark:text-white">MS / MPhil in Computer Science</h4>
+                                <h5 class="text-xs font-semibold text-slate-600 dark:text-slate-300">Ghulam Ishaq Khan Institute (GIKI), Swabi, Pakistan</h5>
+                                <p class="text-xs text-slate-600 dark:text-slate-300 pt-1">
+                                    <strong>Thesis:</strong> <em>Deepfake Audio Detection in Low-Resource Languages: A Case Study of Urdu.</em>
+                                </p>
+                            </div>
+
+                            <!-- BS Degree -->
+                            <div class="glass-card p-6 rounded-3xl space-y-2 border-l-4 border-l-indigo-500">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs font-mono text-slate-600 dark:text-slate-300 font-semibold">Sep 2018 – Aug 2022</span>
+                                </div>
+                                <h4 class="text-lg font-bold text-slate-900 dark:text-white">BS in Computer Science</h4>
+                                <h5 class="text-xs font-semibold text-slate-600 dark:text-slate-300">Abdul Wali Khan University Mardan (AWKUM), Pakistan</h5>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Honors & Scholarships Column -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div>
+                            <h2 class="text-xs font-mono font-semibold tracking-wider text-amber-500 uppercase">Recognitions</h2>
+                            <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mt-1">Honors & Workshops</h3>
+                        </div>
+
+                        <!-- Scholarship Card -->
+                        <div class="glass-card p-6 rounded-3xl space-y-3 bg-gradient-to-br from-amber-500/5 to-transparent border-amber-500/30">
+                            <div class="flex items-center space-x-3 text-amber-500">
+                                <i class="fa-solid fa-award text-2xl"></i>
+                                <div>
+                                    <h4 class="text-base font-bold text-slate-900 dark:text-white">Graduate Assistantship Scholarship</h4>
+                                    <span class="text-2xs font-mono text-amber-600 dark:text-amber-400">GIKI, Pakistan (2023 - 2025)</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600 dark:text-slate-400">
+                                Highly competitive merit scholarship covering full tuition and monthly research stipend in exchange for academic teaching duties.
+                            </p>
+                        </div>
+
+                        <!-- Conferences Attended -->
+                        <div class="glass-card p-6 rounded-3xl space-y-4">
+                            <h4 class="text-sm font-bold text-slate-900 dark:text-white flex items-center">
+                                <i class="fa-solid fa-users-rectangle text-brand-500 mr-2"></i> Conferences & Workshops
+                            </h4>
+                            <ul class="space-y-3 text-xs">
+                                <li class="p-2.5 rounded-xl bg-slate-100/80 dark:bg-slate-900/50">
+                                    <div class="font-semibold text-slate-800 dark:text-slate-200">2nd Int'l Symposium on AI & Quantum Computing</div>
+                                    <div class="text-2xs font-mono text-slate-500">GIKI, Pakistan • Apr 2024</div>
+                                </li>
+                                <li class="p-2.5 rounded-xl bg-slate-100/80 dark:bg-slate-900/50">
+                                    <div class="font-semibold text-slate-800 dark:text-slate-200">1st National Workshop on AI in Healthcare & Drug Discovery</div>
+                                    <div class="text-2xs font-mono text-slate-500">AI-h2D, Pakistan • May 2024</div>
+                                </li>
+                                <li class="p-2.5 rounded-xl bg-slate-100/80 dark:bg-slate-900/50">
+                                    <div class="font-semibold text-slate-800 dark:text-slate-200">Young Scientist Workshop on Applied AI</div>
+                                    <div class="text-2xs font-mono text-slate-500">GIKI, Pakistan • Sep 2024</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services / Offerings Section -->
+        <section class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class=" mb-16 space-y-3">
+                    <h2 class="text-xs font-mono font-semibold tracking-wider text-brand-600 dark:text-brand-400 uppercase">
+                       06 - Expertise & Collaboration
+                    </h2>
+                    <h3 class="text-3xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+                        Academic & Research Services
+                    </h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="glass-card p-8 rounded-3xl space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 dark:text-white">Deep Learning Model Design</h4>
+                        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Architecting CNN, ViT, and Transformer models customized for custom domain constraints, low data, or speech signal inputs.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-8 rounded-3xl space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-accent-500/10 text-accent-500 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-file-signature"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 dark:text-white">Journal Paper Collaboration</h4>
+                        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Peer review, ablation study structuring, baseline comparative analysis, and high-impact LaTeX academic writing.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-8 rounded-3xl space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900 dark:text-white">AI Curriculum & Mentorship</h4>
+                        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                            University-level lectures, lab supervision in PyTorch/TensorFlow, and capstone thesis guidance for undergraduates.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- References & Testimonials Section -->
+        <section class="py-20 bg-slate-100/70 dark:bg-slate-900/40 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <!-- <h2 class="text-xs font-mono font-semibold tracking-wider text-brand-600 dark:text-brand-400 uppercase">
+                      07 - Academic References
+                    </h2> 
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+                        Supervisors & Mentors
+                    </h3> -->
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="glass-card w-full md:w-4/5 p-8 rounded-3xl text-center space-y-5">
+
+                        <!-- Document Icon -->
+                        <div class="w-16 h-16 mx-auto rounded-full bg-brand-600/10 text-brand-600 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-8 h-8"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12h6m-6 4h6M9 8h3m5 12H7a2 2 0 01-2-2V6a2 2 0 012-2h6l5 5v9a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+
+                        <!-- Title -->
+                        <h1 class="text-3xl font-bold text-slate-900 dark:text-white">
+                            Full Curriculum Vitae
+                        </h1>
+
+                        <!-- Description -->
+                        <p class="max-w-2xl mx-auto text-slate-600 dark:text-slate-300">
+                            Detailed CV with publications, talks, awards, teaching, and references.
+                        </p>
+
+                        <!-- Download Button -->
+                        <a href="assets/files/CV.pdf"
+                        download
+                        class="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-brand-500 via-brand-600 to-brand-700 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-brand-600/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-brand-600/30 focus:outline-none focus:ring-2 focus:ring-brand-500/30">
+
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 transition-transform duration-300 group-hover:translate-y-0.5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 16V4m0 12l-4-4m4 4l4-4M4 20h16"/>
+                            </svg>
+
+                            <span>Download CV</span>
+                        </a>
+
+                    </div>
+                </div>  
+                   
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section with Validation -->
+        <section id="contact" class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                    
+                    <!-- Contact Info -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div>
+                            <h2 class="text-xs font-mono font-semibold tracking-wider text-brand-600 dark:text-brand-400 uppercase">Get In Touch</h2>
+                            <h3 class="text-3xl font-extrabold text-slate-900 dark:text-white mt-1">Let's Connect</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mt-2">
+                                Interested in academic research collaboration, PhD inquiries, or deep learning consulting? Send a direct message.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4 text-sm">
+                            <div class="flex items-center space-x-4 p-4 rounded-2xl glass-card">
+                                <div class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <div class="text-2xs font-mono text-slate-400 uppercase">Email Address</div>
+                                    <a href="mailto:owai1669@gmail.com" class="font-semibold text-slate-800 dark:text-slate-200 hover:text-brand-500">owai1669@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4 p-4 rounded-2xl glass-card">
+                                <div class="w-10 h-10 rounded-xl bg-accent-500/10 text-accent-500 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <div class="text-2xs font-mono text-slate-400 uppercase">Primary Locations</div>
+                                    <div class="font-semibold text-slate-800 dark:text-slate-200">Chengdu, China / Swabi, Pakistan</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4 p-4 rounded-2xl glass-card">
+                                <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <div class="text-2xs font-mono text-slate-400 uppercase">Google Scholar</div>
+                                    <a href="https://scholar.google.com/citations?user=BUdzGk4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="font-semibold text-slate-800 dark:text-slate-200 hover:text-indigo-500">Muhammad Owais Scholar Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-7">
+                        <div class="glass-panel p-8 rounded-3xl">
+                            <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-6">Send Message</h4>
+                            
+                            <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-5">
+                                
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                    <div>
+                                        <label for="name" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Your Name *</label>
+                                        <input type="text" id="name" required placeholder="Dr. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-500 transition-colors">
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Email Address *</label>
+                                        <input type="email" id="email" required placeholder="john@university.edu" class="w-full px-4 py-3 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-500 transition-colors">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="subject" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Subject *</label>
+                                    <input type="text" id="subject" required placeholder="Research Collaboration / Inquiries" class="w-full px-4 py-3 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-500 transition-colors">
+                                </div>
+
+                                <div>
+                                    <label for="message" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Message *</label>
+                                    <textarea id="message" rows="4" required placeholder="State your topic or proposal..." class="w-full px-4 py-3 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-sm text-slate-900 dark:text-white focus:outline-none focus:border-brand-500 transition-colors"></textarea>
+                                </div>
+
+                                <button type="submit" id="submit-btn" class="w-full py-3.5 rounded-xl text-base font-semibold text-white bg-brand-600 hover:bg-brand-700 transition-all shadow-md shadow-brand-500/20">
+                                    Send Inquiry <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+                                </button>
+                            </form>
+
+                            <!-- Custom Toast Alert Message -->
+                            <div id="form-toast" class="hidden mt-4 p-4 rounded-xl text-xs font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+                                <i class="fa-solid fa-circle-check mr-2"></i> Thank you! Your message has been prepared and logged for response.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+                <div>
+                    <div class="text-white font-bold text-lg">Muhammad Owais</div>
+                    <p class="text-xs text-slate-500 mt-1">PhD Researcher in Deep Learning • CS Lecturer</p>
+                </div>
+
+                <div class="flex space-x-6 text-xs">
+                    <a href="#about" class="hover:text-white transition-colors">About</a>
+                    <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+                    <a href="#publications" class="hover:text-white transition-colors">Publications</a>
+                    <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+                </div>
+
+                <div class="text-xs text-slate-500">
+                    &copy; 2026 Muhammad Owais. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Floating Button -->
+    <button id="back-to-top" aria-label="Back to top" class="fixed bottom-8 right-8 w-11 h-11 rounded-2xl bg-brand-600 text-white flex items-center justify-center shadow-lg hover:bg-brand-700 opacity-0 pointer-events-none transition-all duration-300 z-50">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- CV Download Modal -->
+    <div id="cv-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="glass-panel p-8 rounded-3xl max-w-md w-full mx-4 space-y-6 relative border border-slate-700">
+            <button onclick="closeCvModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div class="text-center space-y-2">
+                <div class="w-12 h-12 rounded-full bg-brand-500/10 text-brand-500 flex items-center justify-center mx-auto text-xl">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Curriculum Vitae</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Download official academic CV for Muhammad Owais</p>
+            </div>
+            <div class="space-y-3">
+                <button onclick="triggerCvDownload()" class="w-full py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs transition-colors flex items-center justify-center">
+                    <i class="fa-solid fa-download mr-2"></i> Download Complete PDF
+                </button>
+                <button onclick="closeCvModal()" class="w-full py-3 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold text-xs hover:bg-slate-300 dark:hover:bg-slate-700">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Breakdown Modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="glass-panel p-8 rounded-3xl max-w-2xl w-full mx-4 space-y-6 relative border border-slate-700 max-h-[90vh] overflow-y-auto">
+            <button onclick="closeProjectModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div id="project-modal-body">
+                <!-- Dynamically Populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Theme Toggle Logic
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+        function setTheme(isDark) {
+            if (isDark) {
+                document.documentElement.classList.add('dark');
+                lightIcon.classList.remove('hidden');
+                darkIcon.classList.add('hidden');
+                localStorage.setItem('color-theme', 'dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+                darkIcon.classList.remove('hidden');
+                lightIcon.classList.add('hidden');
+                localStorage.setItem('color-theme', 'light');
+            }
+        }
+
+        // Initialize Theme
+        if (localStorage.getItem('color-theme') === 'light') {
+            setTheme(false);
+        } else {
+            setTheme(true);
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            setTheme(!document.documentElement.classList.contains('dark'));
+        });
+
+        // Mobile Navigation Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-nav-item').forEach(item => {
+            item.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Scroll Progress & Back-to-Top Toggle
+        const scrollProgress = document.getElementById('scroll-progress');
+        const backToTopBtn = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+            const currentScroll = window.scrollY;
+            const progress = (currentScroll / totalScroll) * 100;
+            scrollProgress.style.width = `${progress}%`;
+
+            if (currentScroll > 400) {
+                backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Projects Filter
+        function filterProjects(category) {
+            const buttons = document.querySelectorAll('.project-filter-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-600', 'text-white');
+                btn.classList.add('bg-slate-200/80', 'dark:bg-slate-800/80', 'text-slate-700', 'dark:text-slate-300');
+            });
+            event.target.classList.add('bg-brand-600', 'text-white');
+
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Modals Logic
+        function openCvModal() {
+            const modal = document.getElementById('cv-modal');
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+        }
+        function closeCvModal() {
+            const modal = document.getElementById('cv-modal');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+        }
+
+        function triggerCvDownload() {
+            const cvText = `
+MUHAMMAD OWAIS - CV Summary
+PhD Researcher @ UESTC Chengdu China
+MS CS (GIKI, CGPA 3.17) | BS CS (AWKUM, CGPA 3.27)
+Email: owai1669@gmail.com
+
+Publications:
+1. Deepfake Audio Detection in Low-Resource Languages: A Case Study of Urdu (IEEE Access 2026)
+2. Emotion Detection in Urdu Speech: A Deep Hybrid Learning Approach (Springer IJST Q1 2025)
+3. Multimodal Fusion of Vision Transformers and Clinical Language Models (Submitted 2025)
+
+Research Projects:
+- Breast Ultrasound Tumor Classification (CNN / Transfer Learning)
+- Handwritten Character Recognition using CNN & Vision Transformers
+- Grape Leaf Disease Detection
+- Comparative Analysis of GAN & DCGAN
+            `;
+            const blob = new Blob([cvText], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Muhammad_Owais_CV.txt';
+            a.click();
+            closeCvModal();
+        }
+
+        const projectDetails = {
+            'breast-ultrasound': {
+                title: 'Breast Ultrasound Tumor Classification',
+                tags: 'CNN • Transfer Learning • Medical AI',
+                problem: 'Accurate non-invasive diagnosis of malignant vs benign tumors in ultrasound imaging.',
+                methodology: 'Fine-tuned convolutional backbones with data augmentation to combat dataset size constraints.',
+                results: 'Achieved high generalization and precision metrics across cross-validation splits.'
+            },
+            'handwritten-vit': {
+                title: 'Handwritten Character Recognition using ViT',
+                tags: 'Vision Transformers • CNN • Spatial Attention',
+                problem: 'Capturing fine stroke details and contextual positional attention in complex handwritten characters.',
+                methodology: 'Combined CNN spatial convolution layers for localized feature extraction with multi-head ViT attention blocks.',
+                results: 'Outperformed standalone standard CNN baselines on EMNIST benchmark dataset.'
+            },
+            'grape-leaf': {
+                title: 'Grape Leaf Disease Detection',
+                tags: 'Agri-Vision • Deep Learning • ResNet',
+                problem: 'Early pathogen identification in agricultural vineyards to prevent widespread crop loss.',
+                methodology: 'Leveraged transfer learning and augmentations (rotation, zoom, color jitter) to handle varying lighting conditions.',
+                results: 'Demonstrated highly robust diagnostic accuracy under real field lighting conditions.'
+            },
+            'fake-news': {
+                title: 'Comparative Analysis of DL for Fake News Detection',
+                tags: 'NLP • LSTM • Attention Mechanisms',
+                problem: 'Distinguishing deceptive textual news claims from legitimate reporting.',
+                methodology: 'Benchmarked CNN, Recurrent Networks, LSTMs, and standalone Attention mechanisms.',
+                results: 'Showed that Attention-augmented LSTMs achieved superior F1 scores for contextual deception.'
+            },
+            'dcgan-study': {
+                title: 'Comparative Analysis of GAN vs DCGAN',
+                tags: 'Generative AI • DCGAN • Image Synthesis',
+                problem: 'Generating crisp synthetic multilingual alphabet and numeric digit glyphs.',
+                methodology: 'Trained standard GAN vs Deep Convolutional GAN (DCGAN) on multi-script datasets.',
+                results: 'DCGAN yielded vastly reduced mode collapse and cleaner boundary definitions.'
+            },
+            'campus-data': {
+                title: 'Student Data Preprocessing & Profiling',
+                tags: 'Python • Pandas • Data Quality',
+                problem: 'Resolving inconsistencies and missing values in large-scale campus record archives.',
+                methodology: 'Constructed an automated processing pipeline with outlier mitigation and data validation rules.',
+                results: 'Restored dataset integrity for administrative decision support systems.'
+            }
+        };
+
+        function openProjectModal(key) {
+            const data = projectDetails[key];
+            if (!data) return;
+            const body = document.getElementById('project-modal-body');
+            body.innerHTML = `
+                <div class="space-y-4">
+                    <span class="text-xs font-mono text-brand-500 bg-brand-500/10 px-2.5 py-1 rounded-md">${data.tags}</span>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white">${data.title}</h3>
+                    <div class="space-y-3 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+                        <div><strong class="text-slate-900 dark:text-white">Problem Addressed:</strong> ${data.problem}</div>
+                        <div><strong class="text-slate-900 dark:text-white">Methodology & Architecture:</strong> ${data.methodology}</div>
+                        <div><strong class="text-slate-900 dark:text-white">Key Findings & Results:</strong> ${data.results}</div>
+                    </div>
+                </div>
+            `;
+            document.getElementById('project-modal').classList.remove('opacity-0', 'pointer-events-none');
+        }
+
+        function closeProjectModal() {
+            document.getElementById('project-modal').classList.add('opacity-0', 'pointer-events-none');
+        }
+
+        // Form Submission Handling
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submit-btn');
+            const toast = document.getElementById('form-toast');
+            btn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> Processing...`;
+            
+            setTimeout(() => {
+                btn.innerHTML = `Send Inquiry <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>`;
+                toast.classList.remove('hidden');
+                document.getElementById('contact-form').reset();
+                setTimeout(() => { toast.classList.add('hidden'); }, 5000);
+            }, 800);
+        }
+    </script>
+</body>
+</html>
